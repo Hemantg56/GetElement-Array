@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Get-Element-Array</title>
+</head>
+
+<body>
+    <h1 class="x" id="y">Hemant</h1>
+    <h1 class="x" id="y">Hemant</h1>
+    <h1 class="x" id="y">Hemant</h1>
+    <h1 class="x" id="y">Hemant</h1>
+
+
+    <script>
+        // h1_tag = document.getElementById('y')
+        // h1_tag = document.getElementsByClassName('x')
+        // h1_tag = document.getElementsByTagName('h1')
+
+        // h1_tag = document.querySelector('x') // usme call nahi hoga kyu ki isme defination nahi hua hai
+        // h1_tag = document.querySelector('.x') // usme call hoga kyu isme defination diya class ka . likha islye
+        // h1_tag = document.querySelector('#y') // usme call hoga kyu isme definatioon diya id ka # likha hai islye
+
+        // querySelector == Id na jem hoy 6 je ek vakhat call thay
+        // querySelector('.') == aa classname thi thay Id na jem hoy 6 je ek vakhat call thay
+        // querySelector('#') == aa id thi thay Id na jem hoy 6 je ek vakhat call thay
+
+        // querySelectorAll('#') == aa id thi thay badha tag jetala ne ej id thi call karayu hoy evu aave to aaray thyi jevi rite class karayiye evu thay
+        // querySelectorAll('.') == aa class thi thay badha tag jetala ne ej id thi call karayu hoy evu aave to aaray thyi jevi rite class karayiye evu thay
+
+
+        // h1_tag = document.querySelector('#y') // ek j tag call thay
+        // h1_tag = document.querySelector('.x') // ek j tag call thay
+
+        // h1_tag = document.querySelectorAll('.x') // Badha tag call thay 
+
+        h1_tag = document.querySelectorAll('#y') // Badha tag call thay
+
+
+        h1_tag[1].style.color = 'red'
+
+        for (a = 0; a < h1_tag.length; a++) {
+            h1_tag[a].style.color = 'red'
+
+        }
+
+
+        console.log(h1_tag)
+    </script>
+</body>
+
+</html>
